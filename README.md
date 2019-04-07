@@ -1,34 +1,24 @@
-# Employee-Database
-MEMBERS - 
-Sagar(Leader) sagar.r16@iiits.in
-Rahul Kumar rahul.k16@iiits.in
-Shubham Gupta shubham.g16@iiits.in
-Adamya Gupta adamya.g16@iiits.in
+# Employee Database
 
-# Description: 
-
-This project will help to perform some specific   tasks   related   for   maintaining   an  
-Employee   Database . This database will have the details of the employees working in  a  
-certain   company i.e employee ID,name,department,hiring date,manager ID .  Employee's  
-ID are used as a primary key.
+This project will help to perform some specific   tasks   related   for   maintaining   an Employee   Database . This database will have the details of the employees working in  a  certain   company i.e employee ID, name, department, hiring date, manager ID.  Employee's ID are used as a primary key.
 
 The project functions perform the following tasks:-
 
-# 1.Creates a new record.
-# 2.Search  records.
-# 3.Modify records.
-# 4.Delete records.
-# 5.Print records
+1. Creates a new record.
+2. Search  records.
+3. Modify records.
+4. Delete records.
+5. Print records
 
 The program consists of following structures:
 
-# 1.Employee
+### 1.Employee
 	The department node consists of the following parameters:
 		>>>Department id
 		>>>Department name
 		>>>Total no. of managers
 		>>>Total no. of employees
-# 2.Manager
+### 2.Manager
 	The manager node consists of following parameters
 		>>>Employee id--decided automatically
 		>>>Manager id---manager id of a manager is always zero
@@ -40,7 +30,7 @@ The program consists of following structures:
 		>>>Years of experience
 		>>>Pay
 		>>>Marital status
-# 3.Department
+### 3.Department
 	The employee node consists of following parameters
 		>>>Employee id
 		>>>Department tid
@@ -51,12 +41,15 @@ The program consists of following structures:
 		>>>Marital status
 		>>>Pay
 
-The data structure used is 1).A linked list of all departments 
-each department consists   2).A linked list of all managers in the department
-each manager consists of   3).A linked list of all employees under the manager.
+The data structure used is 
+1. A linked list of all departments each department consists a linked list of managers.   
+2. A linked list of all managers in the department each manager consists a linked list of employees.   
+3. A linked list of all employees under the manager.
 
 Id  of an Employee is as as follows:-
-	Department Id:Manager Id:Employee Id
+	
+Department Id:Manager Id:Employee Id
+
 If the Employee is a Manager then the employees Manager ID is zero(0)
 
 Use of data structure:-
@@ -64,7 +57,7 @@ Use of data structure:-
 	Heirarchy:
 		Departments->Managers->Employees 
 
-# task 1:---Create a new record
+### Task 1:---Create a new record
 	# Subtask 1:---Create a new department
 		Creates a new department node and attaches it at the end of list of departent
 		Input:
@@ -99,7 +92,7 @@ Use of data structure:-
 			*Manager id
 		Output:
 			*Employee id assigned to employee
-# task 2:---Search record
+### Task 2:- Search record
     # Subtask 1:---Search Department By Id
     	prompts the user
     	Input:
@@ -151,7 +144,7 @@ Use of data structure:-
             *Pay
             *Manager Id
             *Department Id
-# task 3:---modify record
+### Task 3:- Modify Record
     # Subtask 1:---Change Employee's Department
         Input:
             *Employee Id
@@ -205,7 +198,7 @@ Use of data structure:-
             *Data Get Modified
              (Personal details of employee can be modified)
              assumption-an employee can't modify his salary and his date of journey.
-# task 4:---delete record
+### Task 4:- Delete Record
 	# Subtask 1:---Delete Employee
 		Input:
 			*Employee id to delete
@@ -229,7 +222,7 @@ Use of data structure:-
 			*List of employee id of these employees
 		Output:
 			*All employees deleted (if manager it will ask for the employee to be upgraded to manager)
-# task 5:---Print database
+### Task 5:- Print Database
 	# Subtask 1:---Print all departments
 		prints the list of:-
 			*Departments id and names
